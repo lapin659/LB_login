@@ -40,7 +40,22 @@ body {
   -webkit-transform: rotate(135deg);
 }
 
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    background: white;
+    color: black;
+}
+
+th, td { 
+    font-weight: bold;
+}
+
 /* Subheading */
 h2 {
   color: #2800FF;
 }
+
