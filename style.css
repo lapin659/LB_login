@@ -50,9 +50,16 @@ table {
   color: black;
 }
 
-th { 
+td { 
   font-weight: bold;
   text-align: right;
+  width: 150px;
+  height: 100px;
+  padding: 3px;
+}
+th{
+  vertical-align: top;
+  padding: 3px;
 }
 
 /* Subheading */
