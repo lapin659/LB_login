@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Calendar Page Draft</title>
+
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>
+        <script> document.write(new Date().toLocaleDateString()); </script>
+      </h1>
+      
+      <p><i class="arrow left"></i> <i class="arrow right"></i></p>
+      
+      <form action="/action_page.php">
+        <label for="monthyear">month and year:</label>
+      <input type="month" id="monthyear" name="monthyear">
+        <input type="submit">
+      </form>
+      <p>
+        
+      </p>
+      
+      <table bgcolor="lightgrey" align="center" cellspacing="20" cellpadding="0" class="table">
+          
+        <!-- The tr tag is used to enter 
+            rows in the table -->
+  
+        <!-- It is used to give the heading to the
+            table. We can give the heading to the 
+            top and bottom of the table -->
+  
+        <caption align="top">
+            <!-- Here we have used the attribute 
+                that is style and we have colored 
+                the sentence to make it better 
+                depending on the web page-->
+        </caption>
+  
+        <!-- Here th stands for the heading of the
+            table that comes in the first row-->
+  
+        <!-- The text in this table header tag will 
+            appear as bold and is center aligned-->
+  
+        <thead>
+            <tr>
+                <!-- Here we have applied inline style 
+                     to make it more attractive-->
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>sat</th>
+            </tr>
+        </thead>
+          
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1 <form><input type=submit value="Add Event" style="width:50%"></form></td>
+                <td>2</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+      
+      
+    </main>
+    <!-- The footer holds our remix button — you can use it for structure or cut it out ✂ -->
+    <footer class="footer">
+    </footer>
+  </body>
+</html>
+
+
+body {
+  font-family: HK Grotesk;
+  background-color: var(--color-bg);
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  background: white;
+  color: black;
+}
+
+td { 
+  font-weight: bold;
+  text-align: right;
+  width: 150px;
+  height: 100px;
+  padding: 3px;
+}
+th{
+  vertical-align: top;
+  padding: 3px;
+}
+
+/* Subheading */
+h2 {
+  color: #2800FF;
+}
