@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-<body>
-	<div id="app"></div>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
 
-	<script src="src/index.js">
-	</script>
+    <title>Test Version 2</title>
+
+    <meta name="google-signin-client_id" content="497813503597-tdd39kba2cdnnvslv9vs6h7at8989ihp.apps.googleusercontent.com">
+    
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
   
-  <!-- Button to open the modal login form -->
+  <body>
+    <main>
+      
+      <h2>
+        Modal Login Form
+      </h2>
+    
+<!-- Button to open the modal login form -->
 <button onclick="document.getElementById('id01').style.display='block'">Login</button>
 
 <!-- The Modal -->
@@ -45,7 +64,7 @@ class="close" title="Close Modal">&times;</span>
     </div>
   </form>
 </div>
-  
+      
   <script>
 // Get the modal
 var modal = document.getElementById('id01');
@@ -57,7 +76,7 @@ window.onclick = function(event) {
   }
 }
 </script>
-
-</body>
-
+      
+    </main>
+  </body>
 </html>
