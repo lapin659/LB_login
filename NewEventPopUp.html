@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #0064CC;
+            padding: 30px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+        }
+
+
+        .labelText {
+            text-align: left;
+            font-size: 15px;
+            color: #0064cc;
+        }
+
+        input[type=text] {
+            width: 40%;
+            padding: 12px 20px;
+       
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1.5px solid gray;
+           <! --- 
+               float: left;
+           --->
+        }
+
+
+        .dropbtn {
+            background-color: white;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #0064CC;
+        }
+
+
+
+        #rcorners1 {
+            border-radius: 25px;
+            background: #f0f0f0;
+            padding: 20px;
+            width: 100px;
+            height: 75px;
+            font-family: sans-serif;
+            color: #0064CC;
+            float: right;
+            position: relative;
+            top: -125px;
+            left: -100px;
+          
+           
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* repeat sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+        .button {
+            background-color: #0064CC;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: white;
+            color: #0064CC;
+            border: 2px solid #0064CC;
+        }
+
+        .button1:hover {
+          background-color: #0064CC;
+          color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h2> New Event </h2>
+    </header>
+
+    <form>
+        <label for="title"><label class="labelText"><b>Title</b></label></label>
+        <input type="text" id="title" name="title">
+        <br />
+        <label for="from"><label class="labelText"><b>From</b></label></label>
+        <!--
+            <input type="text" id="from" name="from">
+    -->
+
+        <div class="dropdown">
+            <button class="dropbtn"> </button>
+            <div class="dropdown-content">
+                <a href="#">1 am</a>
+                <a href="#">2 am</a>
+                <a href="#">3 am</a>
+                <a href="#">4 am</a>
+                <a href="#">5 am</a>
+                <a href="#">6 am</a>
+                <a href="#">7 am</a>
+                <a href="#">8 am</a>
+                <a href="#">9 am</a>
+                <a href="#">10 am</a>
+                <a href="#">11 am</a>
+                <a href="#">12 pm</a>
+                <a href="#">1 pm</a>
+                <a href="#">2 pm</a>
+                <a href="#">3 pm</a>
+                <a href="#">4 pm</a>
+                <a href="#">5 pm</a>
+                <a href="#">6 pm</a>
+                <a href="#">7 pm</a>
+                <a href="#">8 pm</a>
+                <a href="#">9 pm</a>
+                <a href="#">10 pm</a>
+                <a href="#">11 pm</a>
+                <a href="#">0 am</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <label for="to"><label class="labelText"><b>To</b></label></label>
+        <input type="text" id="to" name="to">
+    </form>
+
+    
+    <br> <br />
+    <p id="rcorners1">
+        All Day
+        <br> <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </p>
+
+
+    <form action="/action_page.php">
+        <label for="start"><label class="labelText"><b>Start</b></label></label>
+        <input type="date" id="title" name="start">
+        <label for="end"><label class="labelText"><b>End</b></label></label>
+        <input type="date" id="from" name="end">
+    </form>
+
+
+    <form>
+        <label for="description"><label class="labelText"><b>Description</b></label></label>
+        <input type="text" id="title" name="description">
+    </form>
+    <br><br />
+
+
+
+
+
+
+    <p id="rcorners1">
+        Repeat
+        <br> <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </p>
+
+
+
+    <button class="button button1">Add</button>
+
+    <button class="button button1">Cancel</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+        </html >
