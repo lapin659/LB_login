@@ -45,6 +45,9 @@ let currentMonthDays;
 let previousMonthDays;
 let nextMonthDays;
 
+let btn = document.createElement("button");
+btn.innerHTML = "Click Me";
+
 // select the calendar grid header element
 const daysOfWeekElement = document.getElementById("days-of-week");
 
@@ -100,12 +103,9 @@ function appendDay(day, calendarDaysElement) {
   const dayOfMonthElement = document.createElement("span");
   // content
   dayOfMonthElement.innerText = day.dayOfMonth;
-  document.getElementById("app").innerHTML = `
-      <button onclick="document.getElementById('id01').style.display='block'" style="width: 80px; height: 40px; margin: 5px;"> Add Event </button>
-  
-  `;
   dayElement.appendChild(dayOfMonthElement);
   calendarDaysElement.appendChild(dayElement);
+  document.body.appendChild(btn);
 
   // add an extra class to differentiate current month days from prev/next month days
   if (!day.isCurrentMonth) {
