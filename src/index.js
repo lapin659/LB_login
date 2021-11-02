@@ -103,6 +103,7 @@ function appendDay(day, calendarDaysElement) {
   dayElement.appendChild(dayOfMonthElement);
   calendarDaysElement.appendChild(dayElement);
 
+  // add an extra class to differentiate current month days from prev/next month days
   if (!day.isCurrentMonth) {
     dayElementClassList.add("calendar-day--not-current");
   }

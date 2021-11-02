@@ -270,12 +270,15 @@ function createCalendar() {
 
 function appendDay(day, calendarDaysElement) {
   var dayElement = document.createElement("li");
-  var dayElementClassList = dayElement.classList;
-  dayElementClassList.add("calendar-day");
-  var dayOfMonthElement = document.createElement("span");
+  var dayElementClassList = dayElement.classList; // generic calendar day class
+
+  dayElementClassList.add("calendar-day"); // container for day of month number 
+
+  var dayOfMonthElement = document.createElement("span"); // content
+
   dayOfMonthElement.innerText = day.dayOfMonth;
   dayElement.appendChild(dayOfMonthElement);
-  calendarDaysElement.appendChild(dayElement);
+  calendarDaysElement.appendChild(dayElement); // add an extra class to differentiate current month days from prev/next month days
 
   if (!day.isCurrentMonth) {
     dayElementClassList.add("calendar-day--not-current");
@@ -383,7 +386,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34968" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40567" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
