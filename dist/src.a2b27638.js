@@ -238,11 +238,16 @@ var INITIAL_MONTH = (0, _dayjs.default)().format("M");
 var selectedMonth = (0, _dayjs.default)(new Date(INITIAL_YEAR, INITIAL_MONTH - 1, 1));
 var currentMonthDays;
 var previousMonthDays;
-var nextMonthDays;
-var daysOfWeekElement = document.getElementById("days-of-week");
+var nextMonthDays; // select the calendar grid header element
+
+var daysOfWeekElement = document.getElementById("days-of-week"); // loop through the array of weekdays
+
 WEEKDAYS.forEach(function (weekday) {
-  var weekDayElement = document.createElement("li");
-  daysOfWeekElement.appendChild(weekDayElement);
+  // for each item in the array, make a list item element
+  var weekDayElement = document.createElement("li"); // append a child element inside the list item...
+
+  daysOfWeekElement.appendChild(weekDayElement); // ...that contains the value in the array
+
   weekDayElement.innerText = weekday;
 });
 createCalendar();
@@ -378,7 +383,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45038" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34968" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

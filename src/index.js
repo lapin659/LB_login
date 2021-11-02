@@ -1,5 +1,6 @@
 import dayjs from "dayjs";
 import "./styles.css";
+
 const weekday = require("dayjs/plugin/weekday");
 const weekOfYear = require("dayjs/plugin/weekOfYear");
 
@@ -44,16 +45,23 @@ let currentMonthDays;
 let previousMonthDays;
 let nextMonthDays;
 
+// select the calendar grid header element
 const daysOfWeekElement = document.getElementById("days-of-week");
 
+// loop through the array of weekdays
 WEEKDAYS.forEach((weekday) => {
+  // for each item in the array, make a list item element
   const weekDayElement = document.createElement("li");
+  // append a child element inside the list item...
   daysOfWeekElement.appendChild(weekDayElement);
+  // ...that contains the value in the array
   weekDayElement.innerText = weekday;
 });
 
 createCalendar();
 initMonthSelectors();
+
+
 
 function createCalendar(year = INITIAL_YEAR, month = INITIAL_MONTH) {
   const calendarDaysElement = document.getElementById("calendar-days");
@@ -81,6 +89,8 @@ function createCalendar(year = INITIAL_YEAR, month = INITIAL_MONTH) {
   });
 }
 
+
+
 function appendDay(day, calendarDaysElement) {
   const dayElement = document.createElement("li");
   const dayElementClassList = dayElement.classList;
@@ -99,6 +109,8 @@ function appendDay(day, calendarDaysElement) {
   }
 }
 
+
+
 function removeAllDayElements(calendarDaysElement) {
   let first = calendarDaysElement.firstElementChild;
 
@@ -107,6 +119,8 @@ function removeAllDayElements(calendarDaysElement) {
     first = calendarDaysElement.firstElementChild;
   }
 }
+
+
 
 function getNumberOfDaysInMonth(year, month) {
   return dayjs(`${year}-${month}-01`).daysInMonth();
@@ -121,6 +135,8 @@ function createDaysForCurrentMonth(year, month) {
     };
   });
 }
+
+
 
 function createDaysForPreviousMonth(year, month) {
   const firstDayOfTheMonthWeekday = getWeekday(currentMonthDays[0].date);
@@ -149,6 +165,8 @@ function createDaysForPreviousMonth(year, month) {
   });
 }
 
+
+
 function createDaysForNextMonth(year, month) {
   const lastDayOfTheMonthWeekday = getWeekday(
     `${year}-${month}-${currentMonthDays.length}`
@@ -171,9 +189,13 @@ function createDaysForNextMonth(year, month) {
   });
 }
 
+
+
 function getWeekday(date) {
   return dayjs(date).weekday();
 }
+
+
 
 function initMonthSelectors() {
   document
