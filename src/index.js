@@ -100,6 +100,10 @@ function appendDay(day, calendarDaysElement) {
   const dayOfMonthElement = document.createElement("span");
   // content
   dayOfMonthElement.innerText = day.dayOfMonth;
+  document.getElementById("app").innerHTML = `
+      <button onclick="document.getElementById('id01').style.display='block'" style="width: 80px; height: 40px; margin: 5px;"> Add Event </button>
+  
+  `;
   dayElement.appendChild(dayOfMonthElement);
   calendarDaysElement.appendChild(dayElement);
 

@@ -277,6 +277,7 @@ function appendDay(day, calendarDaysElement) {
   var dayOfMonthElement = document.createElement("span"); // content
 
   dayOfMonthElement.innerText = day.dayOfMonth;
+  document.getElementById("app").innerHTML = "\n      <button onclick=\"document.getElementById('id01').style.display='block'\" style=\"width: 80px; height: 40px; margin: 5px;\"> Add Event </button>\n  \n  ";
   dayElement.appendChild(dayOfMonthElement);
   calendarDaysElement.appendChild(dayElement); // add an extra class to differentiate current month days from prev/next month days
 
@@ -386,7 +387,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39315" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41317" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
