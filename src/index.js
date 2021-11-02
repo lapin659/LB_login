@@ -45,8 +45,8 @@ let currentMonthDays;
 let previousMonthDays;
 let nextMonthDays;
 
-let btn = document.createElement("button");
-btn.innerHTML = "Click Me";
+//let btn = document.createElement("button");
+//btn.innerHTML = "Click Me";
 
 // select the calendar grid header element
 const daysOfWeekElement = document.getElementById("days-of-week");
@@ -101,8 +101,10 @@ function appendDay(day, calendarDaysElement) {
   dayElementClassList.add("calendar-day");
   // container for day of month number 
   const dayOfMonthElement = document.createElement("span");
+  const btn = document.createElement("button")
   // content
   dayOfMonthElement.innerText = day.dayOfMonth;
+  btn.innerHTML = "click me";
   dayElement.appendChild(dayOfMonthElement);
   calendarDaysElement.appendChild(dayElement);
   document.body.appendChild(btn);
