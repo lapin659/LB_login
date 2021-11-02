@@ -94,8 +94,11 @@ function createCalendar(year = INITIAL_YEAR, month = INITIAL_MONTH) {
 function appendDay(day, calendarDaysElement) {
   const dayElement = document.createElement("li");
   const dayElementClassList = dayElement.classList;
+  // generic calendar day class
   dayElementClassList.add("calendar-day");
+  // container for day of month number 
   const dayOfMonthElement = document.createElement("span");
+  // content
   dayOfMonthElement.innerText = day.dayOfMonth;
   dayElement.appendChild(dayOfMonthElement);
   calendarDaysElement.appendChild(dayElement);
