@@ -18,10 +18,12 @@ li {
 
 .calendar-month {
   position: relative;
+  /* color of the day cell borders */
   background-color: var(--grey-200);
   border: solid 1px var(--grey-200);
 }
 
+/* month indicator and selectors positioning*/
 .calendar-month-header {
   display: flex;
   justify-content: space-between;
@@ -29,11 +31,13 @@ li {
   padding: 10px;
 }
 
+/* month indicator */
 .calendar-month-header-selected-month {
   font-size: 24px;
   font-weight: 600;
 }
 
+/* month slectors positioning */
 .calendar-month-header-selectors {
   display: flex;
   align-items: center;
@@ -45,6 +49,7 @@ li {
   cursor: pointer;
 }
 
+/* Mon | Tue | Wed | Thu | Fri | Sat | Sun */
 .day-of-week {
   color: var(--grey-800);
   font-size: 18px;
