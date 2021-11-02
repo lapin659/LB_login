@@ -197,3 +197,5 @@ function initMonthSelectors() {
       createCalendar(selectedMonth.format("YYYY"), selectedMonth.format("M"));
     });
 }
+
+document.querySelectorAll
