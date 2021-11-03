@@ -95,7 +95,7 @@ li {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 2px;
+  right:8px;
   width: var(--day-label-size);
   height: var(--day-label-size);
 }
