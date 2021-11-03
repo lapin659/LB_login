@@ -104,7 +104,7 @@ function appendDay(day, calendarDaysElement) {
   const btn = document.createElement("button")
   // content
   dayOfMonthElement.innerText = day.dayOfMonth;
-  btn.innerHTML = "Add Event";
+  btn.innerHTML = "+";
   dayElement.appendChild(dayOfMonthElement);
   calendarDaysElement.appendChild(dayElement);
   dayElement.appendChild(btn);
