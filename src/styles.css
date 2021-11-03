@@ -53,7 +53,7 @@ li {
 .day-of-week {
   color: var(--grey-800);
   font-size: 18px;
-  background-color: #fff;
+  background-color: #006fe6;
   padding-bottom: 5px;
   padding-top: 10px;
 }
@@ -84,7 +84,7 @@ li {
   position: relative;
   min-height: 100px;
   font-size: 16px;
-  background-color: #fff;
+  background-color: #fff9e6;
   color: var(--grey-800);
   padding: 5px;
 }

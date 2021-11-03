@@ -230,7 +230,7 @@ _dayjs.default.extend(weekday);
 
 _dayjs.default.extend(weekOfYear);
 
-document.getElementById("app").innerHTML = "\n<div class=\"calendar-month\">\n  <section class=\"calendar-month-header\">\n    <div\n      id=\"selected-month\"\n      class=\"calendar-month-header-selected-month\"\n    ></div>\n    <section class=\"calendar-month-header-selectors\">\n      <span id=\"previous-month-selector\"><</span>\n      <span id=\"present-month-selector\">Today</span>\n      <span id=\"next-month-selector\">></span>\n    </section>\n  </section>\n\n  <ol\n    id=\"days-of-week\"\n    class=\"day-of-week\"\n  /></ol>\n\n  <ol\n    id=\"calendar-days\"\n    class=\"days-grid\"\n  >\n  </ol>\n</div>\n";
+document.getElementById("app").innerHTML = "\n<div class=\"calendar-month\">\n  <section class=\"calendar-month-header\">\n    <div\n      id=\"selected-month\"\n      class=\"calendar-month-header-selected-month\"\n    ></div>\n    <section class=\"calendar-month-header-selectors\">\n      <span id=\"previous-month-selector\"><</span>\n      <span id=\"present-month-selector\">Navigation</span>\n      <span id=\"next-month-selector\">></span>\n    </section>\n  </section>\n\n  <ol\n    id=\"days-of-week\"\n    class=\"day-of-week\"\n  /></ol>\n\n  <ol\n    id=\"calendar-days\"\n    class=\"days-grid\"\n  >\n  </ol>\n</div>\n";
 var WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 var TODAY = (0, _dayjs.default)().format("YYYY-MM-DD");
 var INITIAL_YEAR = (0, _dayjs.default)().format("YYYY");
@@ -391,7 +391,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36376" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42976" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
