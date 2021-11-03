@@ -16,7 +16,7 @@ document.getElementById("app").innerHTML = `
     ></div>
     <section class="calendar-month-header-selectors">
       <span id="previous-month-selector"><</span>
-      <span id="present-month-selector">Navigation</span>
+      <span id="present-month-selector"> Navigation </span>
       <span id="next-month-selector">></span>
     </section>
   </section>
