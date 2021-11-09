@@ -24,6 +24,12 @@
   border-radius: 4px;
 }
 
+#description {
+  border: 2px solid;
+  border-radius: 4px;
+  height: 12em;
+}
+
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;

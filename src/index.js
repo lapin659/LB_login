@@ -147,7 +147,10 @@ function appendDay(day, calendarDaysElement) {
 
     <form action="" method="post">
         <label for="description"><label class="labelText"><b>Description</b></label></label>
-        <input type="text" id="title" name="description">
+        <textarea name="description" rows="4" cols="30">
+          <input type="textarea" id="description" name="description">        
+        </textarea>
+
     </form>
       <br>
       <br>
