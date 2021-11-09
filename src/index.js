@@ -99,7 +99,6 @@ function appendDay(day, calendarDaysElement) {
   dayElementClassList.add("calendar-day");
   // container for day of month number 
   const dayOfMonthElement = document.createElement("span");
-  const btn = document.createElement("button");
   // content
   dayOfMonthElement.innerText = day.dayOfMonth;
   testElement.innerHTML = `
