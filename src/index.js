@@ -104,9 +104,9 @@ function appendDay(day, calendarDaysElement) {
   const btn = document.createElement("button")
   // content
   dayOfMonthElement.innerText = day.dayOfMonth;
-  btn.innerHTML = "+";
   dayElement.appendChild(dayOfMonthElement);
   calendarDaysElement.appendChild(dayElement);
+  btn.innerHTML = "+";
   dayElement.appendChild(btn);
 
   // add an extra class to differentiate current month days from prev/next month days
