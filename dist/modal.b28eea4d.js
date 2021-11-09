@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../rbd/pnpm-volume/72e436cc-2a83-4664-898c-5d16c503f552/node_modules/.registry.npmjs.org/parcel-bundler/1.12.5/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../rbd/pnpm-volume/7643b825-854f-4999-b646-bc0857497c7c/node_modules/.registry.npmjs.org/parcel-bundler/1.12.5/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../rbd/pnpm-volume/72e436cc-2a83-4664-898c-5d16c503f552/node_modules/.registry.npmjs.org/parcel-bundler/1.12.5/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../rbd/pnpm-volume/7643b825-854f-4999-b646-bc0857497c7c/node_modules/.registry.npmjs.org/parcel-bundler/1.12.5/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../rbd/pnpm-volume/72e436cc-2a83-4664-898c-5d16c503f552/node_modules/.registry.npmjs.org/parcel-bundler/1.12.5/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/modal.css":[function(require,module,exports) {
+},{"./bundle-url":"../rbd/pnpm-volume/7643b825-854f-4999-b646-bc0857497c7c/node_modules/.registry.npmjs.org/parcel-bundler/1.12.5/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/modal.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../rbd/pnpm-volume/72e436cc-2a83-4664-898c-5d16c503f552/node_modules/.registry.npmjs.org/parcel-bundler/1.12.5/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../rbd/pnpm-volume/7643b825-854f-4999-b646-bc0857497c7c/node_modules/.registry.npmjs.org/parcel-bundler/1.12.5/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"_css_loader":"../rbd/pnpm-volume/7643b825-854f-4999-b646-bc0857497c7c/node_modules/.registry.npmjs.org/parcel-bundler/1.12.5/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../rbd/pnpm-volume/7643b825-854f-4999-b646-bc0857497c7c/node_modules/.registry.npmjs.org/parcel-bundler/1.12.5/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36025" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34879" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

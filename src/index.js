@@ -120,40 +120,9 @@ function appendDay(day, calendarDaysElement) {
         <label for="title"><label class="labelText"><b>Title</b></label></label>
         <input type="text" id="title" name="title">
         <br />
+        
         <label for="from"><label class="labelText"><b>From</b></label></label>
-        <!--
-            <input type="text" id="from" name="from">
-        -->
-
-        <div class="dropdown">
-            <button class="dropbtn"> </button>
-            <div class="dropdown-content">
-                <a href="#">1 am</a>
-                <a href="#">2 am</a>
-                <a href="#">3 am</a>
-                <a href="#">4 am</a>
-                <a href="#">5 am</a>
-                <a href="#">6 am</a>
-                <a href="#">7 am</a>
-                <a href="#">8 am</a>
-                <a href="#">9 am</a>
-                <a href="#">10 am</a>
-                <a href="#">11 am</a>
-                <a href="#">12 pm</a>
-                <a href="#">1 pm</a>
-                <a href="#">2 pm</a>
-                <a href="#">3 pm</a>
-                <a href="#">4 pm</a>
-                <a href="#">5 pm</a>
-                <a href="#">6 pm</a>
-                <a href="#">7 pm</a>
-                <a href="#">8 pm</a>
-                <a href="#">9 pm</a>
-                <a href="#">10 pm</a>
-                <a href="#">11 pm</a>
-                <a href="#">0 am</a>
-            </div>
-        </div>
+        <input type="text" id="from" name="from">
 
         <label for="to"><label class="labelText"><b>To</b></label></label>
         <input type="text" id="to" name="to">
@@ -171,6 +140,7 @@ function appendDay(day, calendarDaysElement) {
     <form action="" method="post">
         <label for="start"><label class="labelText"><b>Start</b></label></label>
         <input type="date" id="title" name="start">
+        
         <label for="end"><label class="labelText"><b>End</b></label></label>
         <input type="date" id="from" name="end">
     </form>
