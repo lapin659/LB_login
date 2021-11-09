@@ -20,14 +20,17 @@
 }
 
 #title {
+  width: 30%;
   border: 2px solid;
   border-radius: 4px;
 }
 
 #description {
+  width: 65%;
+  margin-top: 20px;
   border: 2px solid;
   border-radius: 4px;
-  height: 12em;
+  height: 4em;
 }
 
 /* Modal Content/Box */
