@@ -7,7 +7,7 @@ const weekOfYear = require("dayjs/plugin/weekOfYear");
 dayjs.extend(weekday);
 dayjs.extend(weekOfYear);
 
-document.getElementById("app").innerHTML = `
+document.getElementById("app").innerHTML = `  
 <div class="calendar-month">
   <section class="calendar-month-header">
     <div
@@ -102,7 +102,113 @@ function appendDay(day, calendarDaysElement) {
   const btn = document.createElement("button");
   // content
   dayOfMonthElement.innerText = day.dayOfMonth;
-  testElement.innerHTML = '<p> Testing </p>';
+  testElement.innerHTML = `
+  <!-- Button to open the modal login form -->
+  <button onclick="document.getElementById('id01').style.display='block'" style="width: 20px; height: 20px; margin: 5px;"> + </button>
+
+  <!-- The Modal -->
+  <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="">
+    <div>
+      <header>
+        <h2> New Event </h2>
+    </header>
+
+    <form>
+        <label for="title"><label class="labelText"><b>Title</b></label></label>
+        <input type="text" id="title" name="title">
+        <br />
+        <label for="from"><label class="labelText"><b>From</b></label></label>
+        <!--
+            <input type="text" id="from" name="from">
+        -->
+
+        <div class="dropdown">
+            <button class="dropbtn"> </button>
+            <div class="dropdown-content">
+                <a href="#">1 am</a>
+                <a href="#">2 am</a>
+                <a href="#">3 am</a>
+                <a href="#">4 am</a>
+                <a href="#">5 am</a>
+                <a href="#">6 am</a>
+                <a href="#">7 am</a>
+                <a href="#">8 am</a>
+                <a href="#">9 am</a>
+                <a href="#">10 am</a>
+                <a href="#">11 am</a>
+                <a href="#">12 pm</a>
+                <a href="#">1 pm</a>
+                <a href="#">2 pm</a>
+                <a href="#">3 pm</a>
+                <a href="#">4 pm</a>
+                <a href="#">5 pm</a>
+                <a href="#">6 pm</a>
+                <a href="#">7 pm</a>
+                <a href="#">8 pm</a>
+                <a href="#">9 pm</a>
+                <a href="#">10 pm</a>
+                <a href="#">11 pm</a>
+                <a href="#">0 am</a>
+            </div>
+        </div>
+
+        <label for="to"><label class="labelText"><b>To</b></label></label>
+        <input type="text" id="to" name="to">
+    </form>
+    
+    <br> <br />
+    <p id="rcorners1">
+        All Day
+        <br> <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </p>
+
+    <form action="" method="post">
+        <label for="start"><label class="labelText"><b>Start</b></label></label>
+        <input type="date" id="title" name="start">
+        <label for="end"><label class="labelText"><b>End</b></label></label>
+        <input type="date" id="from" name="end">
+    </form>
+
+    <form action="" method="post">
+        <label for="description"><label class="labelText"><b>Description</b></label></label>
+        <input type="text" id="title" name="description">
+    </form>
+      <br>
+      <br>
+
+    <p id="rcorners1">
+        Repeat
+        <br> <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </p>
+
+    <button class="button button1">Add</button>
+    <button class="button button1">Cancel</button>
+
+    </div>
+    
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+    
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  </div>
+  `;
   dayElement.appendChild(dayOfMonthElement);
   dayElement.appendChild(testElement);
   calendarDaysElement.appendChild(dayElement);
