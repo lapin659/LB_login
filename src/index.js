@@ -104,7 +104,7 @@ function appendDay(day, calendarDaysElement) {
   dayOfMonthElement.innerText = day.dayOfMonth;
   testElement.innerHTML = `
   <!-- Button to open the modal login form -->
-  <button onclick="document.getElementById('id01').style.display='block'" style="width: 20px; height: 20px; margin: 5px;"> + </button>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width: 20px; height: 20px; margin: 5px; padding: 1px;"> + </button>
 
   <!-- The Modal -->
   <div id="id01" class="modal">
