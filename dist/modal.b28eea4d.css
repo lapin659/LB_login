@@ -13,7 +13,9 @@
   padding-top: 60px;
 }
 
-
+#from, #to {
+  width: 20%;
+}
 
 /* Modal Content/Box */
 .modal-content {
