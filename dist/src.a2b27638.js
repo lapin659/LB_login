@@ -279,6 +279,7 @@ function appendDay(day, calendarDaysElement) {
   var btn = document.createElement("button"); // content
 
   dayOfMonthElement.innerText = day.dayOfMonth;
+  testElement.innerHTML = "";
   dayElement.appendChild(dayOfMonthElement);
   calendarDaysElement.appendChild(dayElement); //btn.innerHTML = "+";
   //dayElement.appendChild(btn);
@@ -390,7 +391,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44673" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33962" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
