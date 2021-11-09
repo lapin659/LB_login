@@ -15,6 +15,13 @@
 
 #from, #to {
   width: 20%;
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+#title {
+  border: 2px solid;
+  border-radius: 4px;
 }
 
 /* Modal Content/Box */
