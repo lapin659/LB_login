@@ -93,6 +93,7 @@ function createCalendar(year = INITIAL_YEAR, month = INITIAL_MONTH) {
 
 function appendDay(day, calendarDaysElement) {
   const dayElement = document.createElement("li");
+  const testElement = document.createElement("td");
   const dayElementClassList = dayElement.classList;
   // generic calendar day class
   dayElementClassList.add("calendar-day");
@@ -104,8 +105,8 @@ function appendDay(day, calendarDaysElement) {
   dayElement.appendChild(dayOfMonthElement);
   calendarDaysElement.appendChild(dayElement);
   
-  btn.innerHTML = "+";
-  dayElement.appendChild(btn);
+  //btn.innerHTML = "+";
+  //dayElement.appendChild(btn);
 
   // add an extra class to differentiate current month days from prev/next month days
   if (!day.isCurrentMonth) {
