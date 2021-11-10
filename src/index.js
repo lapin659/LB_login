@@ -110,7 +110,7 @@ function appendDay(day, calendarDaysElement) {
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   
   <!-- Modal Content -->
-  <form class="modal-content animate" action="src/test.php">
+  <form class="modal-content animate">
     <div>
       <header>
         <h2> New Event </h2>
@@ -137,7 +137,7 @@ function appendDay(day, calendarDaysElement) {
         </label>
     </p>
 
-    <form action="" method="post">
+    <form method="post">
         <label for="start"><label class="labelText"><b>Start</b></label></label>
         <input type="date" id="title" name="start">
         
@@ -145,7 +145,7 @@ function appendDay(day, calendarDaysElement) {
         <input type="date" id="from" name="end">
     </form>
 
-    <form action="" method="post">
+    <form method="post">
         <label for="description"><label class="labelText"><b>Description</b></label></label>
         <input type="textarea" id="description" name="description" maxlength="50">
     </form>
@@ -160,7 +160,7 @@ function appendDay(day, calendarDaysElement) {
         </label>
     </p>
 
-    <button class="button button1">Add</button>
+    <button class="button button1" onclick="">Add</button>
     <button class="button button1">Cancel</button>
 
     </div>
@@ -305,3 +305,4 @@ function initMonthSelectors() {
       createCalendar(selectedMonth.format("YYYY"), selectedMonth.format("M"));
     });
 }
+
