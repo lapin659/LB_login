@@ -89,6 +89,9 @@ function createCalendar(year = INITIAL_YEAR, month = INITIAL_MONTH) {
   });
 }
 
+function testFunction() {
+  
+}
 
 
 function appendDay(day, calendarDaysElement) {
