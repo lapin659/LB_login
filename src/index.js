@@ -45,6 +45,13 @@ let currentMonthDays;
 let previousMonthDays;
 let nextMonthDays;
 
+let title;
+let from;
+let to;
+let start;
+let end;
+let description;
+
 // select the calendar grid header element
 const daysOfWeekElement = document.getElementById("days-of-week");
 
