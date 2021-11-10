@@ -110,7 +110,7 @@ function appendDay(day, calendarDaysElement) {
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   
   <!-- Modal Content -->
-  <form class="modal-content animate" action="">
+  <form class="modal-content animate" action="src/test.php">
     <div>
       <header>
         <h2> New Event </h2>
