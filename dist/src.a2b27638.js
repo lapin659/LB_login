@@ -244,7 +244,8 @@ var from;
 var to;
 var start;
 var end;
-var description; // select the calendar grid header element
+var description;
+var modal = [title, to, from, start, end, description]; // select the calendar grid header element
 
 var daysOfWeekElement = document.getElementById("days-of-week"); // loop through the array of weekdays
 
@@ -399,7 +400,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42487" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43549" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

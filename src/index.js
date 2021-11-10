@@ -51,6 +51,7 @@ let to;
 let start;
 let end;
 let description;
+var modal = [title, to, from, start, end, description];
 
 // select the calendar grid header element
 const daysOfWeekElement = document.getElementById("days-of-week");
@@ -97,7 +98,7 @@ function createCalendar(year = INITIAL_YEAR, month = INITIAL_MONTH) {
 }
 
 function testFunction() {
-  
+  let modal = 
 }
 
 
@@ -170,7 +171,7 @@ function appendDay(day, calendarDaysElement) {
         </label>
     </p>
 
-    <button class="button button1" onclick="">Add</button>
+    <button class="button button1" onclick="testFunction()">Add</button>
     <button class="button button1">Cancel</button>
 
     </div>
