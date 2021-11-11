@@ -36,6 +36,7 @@ td {
   justify-content: space-between;
   background-color: #0064CC;
   padding: 10px;
+  padding-right: 70px;
 }
 
 /* month indicator */
@@ -45,14 +46,21 @@ td {
   font-weight: 600;
 }
 
-/* month slectors positioning */
+/* month selectors positioning */
 .calendar-month-header-selectors {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80px;
-  padding: 5px;
-  margin: 5px;
+  width: 40px;
+  font-size: 20px;
+}
+
+#previous-month-selector {
+  padding-right: 5px;
+}
+
+#next-month-selector {
+  padding-left: 5px;
 }
 
 .calendar-month-header-selectors > * {
