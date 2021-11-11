@@ -303,13 +303,14 @@ function initMonthSelectors() {
       createCalendar(selectedMonth.format("YYYY"), selectedMonth.format("M"));
     });
 
-  document
+/*
+    document
     .getElementById("present-month-selector")
     .addEventListener("click", function () {
       selectedMonth = dayjs(new Date(INITIAL_YEAR, INITIAL_MONTH - 1, 1));
       createCalendar(selectedMonth.format("YYYY"), selectedMonth.format("M"));
     });
-
+*/
   document
     .getElementById("next-month-selector")
     .addEventListener("click", function () {

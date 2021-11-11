@@ -367,10 +367,15 @@ function initMonthSelectors() {
     selectedMonth = (0, _dayjs.default)(selectedMonth).subtract(1, "month");
     createCalendar(selectedMonth.format("YYYY"), selectedMonth.format("M"));
   });
-  document.getElementById("present-month-selector").addEventListener("click", function () {
-    selectedMonth = (0, _dayjs.default)(new Date(INITIAL_YEAR, INITIAL_MONTH - 1, 1));
-    createCalendar(selectedMonth.format("YYYY"), selectedMonth.format("M"));
-  });
+  /*
+      document
+      .getElementById("present-month-selector")
+      .addEventListener("click", function () {
+        selectedMonth = dayjs(new Date(INITIAL_YEAR, INITIAL_MONTH - 1, 1));
+        createCalendar(selectedMonth.format("YYYY"), selectedMonth.format("M"));
+      });
+  */
+
   document.getElementById("next-month-selector").addEventListener("click", function () {
     selectedMonth = (0, _dayjs.default)(selectedMonth).add(1, "month");
     createCalendar(selectedMonth.format("YYYY"), selectedMonth.format("M"));
@@ -404,7 +409,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36477" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35042" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
