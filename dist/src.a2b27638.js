@@ -274,8 +274,12 @@ function createCalendar() {
     appendDay(day, calendarDaysElement);
   });
 }
+/*
+function testFunction() {
+  let modal = 
+}
+*/
 
-function testFunction() {}
 
 function appendDay(day, calendarDaysElement) {
   var dayElement = document.createElement("li");
@@ -287,7 +291,7 @@ function appendDay(day, calendarDaysElement) {
   var dayOfMonthElement = document.createElement("span"); // content
 
   dayOfMonthElement.innerText = day.dayOfMonth;
-  testElement.innerHTML = "\n  <!-- Button to open the modal login form -->\n  <button onclick=\"document.getElementById('id01').style.display='block'\" style=\"width: 20px; height: 20px; margin: 5px; padding: 1px;\"> + </button>\n\n  <!-- The Modal -->\n  <div id=\"id01\" class=\"modal\">\n  <span onclick=\"document.getElementById('id01').style.display='none'\" class=\"close\" title=\"Close Modal\">&times;</span>\n  \n  <!-- Modal Content -->\n  <form class=\"modal-content animate\">\n    <div>\n      <header>\n        <h2> New Event </h2>\n    </header>\n\n    <form>\n        <label for=\"title\"><label class=\"labelText\"><b>Title</b></label></label>\n        <input type=\"text\" id=\"title\" name=\"title\" maxlength=\"30\">\n        <br />\n        \n        <label for=\"from\"><label class=\"labelText\"><b>From</b></label></label>\n        <input type=\"text\" id=\"from\" name=\"from\">\n\n        <label for=\"to\"><label class=\"labelText\"><b>To</b></label></label>\n        <input type=\"text\" id=\"to\" name=\"to\">\n    </form>\n    \n    <br> <br />\n    <p id=\"rcorners1\">\n        All Day\n        <br> <label class=\"switch\">\n            <input type=\"checkbox\">\n            <span class=\"slider round\"></span>\n        </label>\n    </p>\n\n    <form method=\"post\">\n        <label for=\"start\"><label class=\"labelText\"><b>Start</b></label></label>\n        <input type=\"date\" id=\"title\" name=\"start\">\n        \n        <label for=\"end\"><label class=\"labelText\"><b>End</b></label></label>\n        <input type=\"date\" id=\"from\" name=\"end\">\n    </form>\n\n    <form method=\"post\">\n        <label for=\"description\"><label class=\"labelText\"><b>Description</b></label></label>\n        <input type=\"textarea\" id=\"description\" name=\"description\" maxlength=\"50\">\n    </form>\n      <br>\n      <br>\n\n    <p id=\"rcorners1\">\n        Repeat\n        <br> <label class=\"switch\">\n            <input type=\"checkbox\">\n            <span class=\"slider round\"></span>\n        </label>\n    </p>\n\n    <button class=\"button button1\" onclick=\"\">Add</button>\n    <button class=\"button button1\">Cancel</button>\n\n    </div>\n    \n  <script>\n  // Get the modal\n  var modal = document.getElementById('id01');\n    \n  // When the user clicks anywhere outside of the modal, close it\n  window.onclick = function(event) {\n    if (event.target == modal) {\n      modal.style.display = \"none\";\n    }\n  }\n  </script>\n  </div>\n  ";
+  testElement.innerHTML = "\n  <!-- Button to open the modal login form -->\n  <button onclick=\"document.getElementById('id01').style.display='block'\" style=\"width: 20px; height: 20px; margin: 5px; padding: 1px;\"> + </button>\n\n  <!-- The Modal -->\n  <div id=\"id01\" class=\"modal\">\n  <span onclick=\"document.getElementById('id01').style.display='none'\" class=\"close\" title=\"Close Modal\">&times;</span>\n  \n  <!-- Modal Content -->\n  <form class=\"modal-content animate\">\n    <div>\n      <header>\n        <h2> New Event </h2>\n    </header>\n\n    <form>\n        <label for=\"title\"><label class=\"labelText\"><b>Title</b></label></label>\n        <input type=\"text\" id=\"title\" name=\"title\" maxlength=\"30\">\n        <br />\n        \n        <label for=\"from\"><label class=\"labelText\"><b>From</b></label></label>\n        <input type=\"text\" id=\"from\" name=\"from\">\n\n        <label for=\"to\"><label class=\"labelText\"><b>To</b></label></label>\n        <input type=\"text\" id=\"to\" name=\"to\">\n    </form>\n    \n    <br> <br />\n    <p id=\"rcorners1\">\n        All Day\n        <br> <label class=\"switch\">\n            <input type=\"checkbox\">\n            <span class=\"slider round\"></span>\n        </label>\n    </p>\n\n    <form method=\"post\">\n        <label for=\"start\"><label class=\"labelText\"><b>Start</b></label></label>\n        <input type=\"date\" id=\"title\" name=\"start\">\n        \n        <label for=\"end\"><label class=\"labelText\"><b>End</b></label></label>\n        <input type=\"date\" id=\"from\" name=\"end\">\n    </form>\n\n    <form method=\"post\">\n        <label for=\"description\"><label class=\"labelText\"><b>Description</b></label></label>\n        <input type=\"textarea\" id=\"description\" name=\"description\" maxlength=\"50\">\n    </form>\n      <br>\n      <br>\n\n    <p id=\"rcorners1\">\n        Repeat\n        <br> <label class=\"switch\">\n            <input type=\"checkbox\">\n            <span class=\"slider round\"></span>\n        </label>\n    </p>\n\n    <button class=\"button button1\" onclick=\"testFunction()\">Add</button>\n    <button class=\"button button1\">Cancel</button>\n\n    </div>\n    \n  <script>\n  // Get the modal\n  var modal = document.getElementById('id01');\n    \n  // When the user clicks anywhere outside of the modal, close it\n  window.onclick = function(event) {\n    if (event.target == modal) {\n      modal.style.display = \"none\";\n    }\n  }\n  </script>\n  </div>\n  ";
   dayElement.appendChild(dayOfMonthElement);
   dayElement.appendChild(testElement);
   calendarDaysElement.appendChild(dayElement); //btn.innerHTML = "+";
@@ -400,7 +404,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43549" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37483" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

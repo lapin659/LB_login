@@ -97,10 +97,11 @@ function createCalendar(year = INITIAL_YEAR, month = INITIAL_MONTH) {
   });
 }
 
+/*
 function testFunction() {
   let modal = 
 }
-
+*/
 
 function appendDay(day, calendarDaysElement) {
   const dayElement = document.createElement("li");
