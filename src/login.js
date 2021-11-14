@@ -12,3 +12,9 @@ function onSignIn(googleUser) {
   //document.location.href = "https://calendar-version-2-3.glitch.me/main.html";
   //document.location.href = "main.html";
 }
+
+function signOut() {
+  gapi.auth2.getAuthInstance().signOut().then(function() {
+    console.log('user signed out')
+  })
+}
