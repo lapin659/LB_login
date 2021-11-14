@@ -13,69 +13,145 @@
         <h2> New Event </h2>
     </header>
 
+
+    <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+
+
+
     <form>
         <label for="title"><label class="labelText"><b>Title</b></label></label>
         <input type="text" id="title" name="title">
-        <br>
-        <label for="from"><label class="labelText"><b>From</b></label></label>
-        <!--
-            <input type="text" id="from" name="from">
-    -->
-
-        <div class="dropdown">
-            <button class="dropbtn"> </button>
-            <div class="dropdown-content">
-                <a href="#">1 am</a>
-                <a href="#">2 am</a>
-                <a href="#">3 am</a>
-                <a href="#">4 am</a>
-                <a href="#">5 am</a>
-                <a href="#">6 am</a>
-                <a href="#">7 am</a>
-                <a href="#">8 am</a>
-                <a href="#">9 am</a>
-                <a href="#">10 am</a>
-                <a href="#">11 am</a>
-                <a href="#">12 pm</a>
-                <a href="#">1 pm</a>
-                <a href="#">2 pm</a>
-                <a href="#">3 pm</a>
-                <a href="#">4 pm</a>
-                <a href="#">5 pm</a>
-                <a href="#">6 pm</a>
-                <a href="#">7 pm</a>
-                <a href="#">8 pm</a>
-                <a href="#">9 pm</a>
-                <a href="#">10 pm</a>
-                <a href="#">11 pm</a>
-                <a href="#">0 am</a>
+        <br />
 
 
-
-
-
-            </div>
-        </div>
-
-
-
-
-
-        <label for="to"><label class="labelText"><b>To</b></label></label>
-        <input type="text" id="to" name="to">
     </form>
 
-    
-    <br> <br>
+
+
+    <!----Work Label Slider-->
+    <p id="rcorners2">
+        <label class="workText"><b>Work</b></label>
+        <br /><label class="switch">
+            <input type="checkbox">
+            <span class="sliderWork round"></span>
+        </label>
+    </p>
+
+    <!---Personal Label Slider--->
+    <p id="rcorners2">
+        <label class="personalText"><b>Personal</b></label>
+        <br /><label class="switch">
+            <input type="checkbox">
+            <span class="sliderPersonal round"></span>
+        </label>
+    </p>
+
+    <!----Academic Label Slider--->
+    <p id="rcorners2">
+        <label class="academicText"><b>Academic</b></label>
+        <br /><label class="switch">
+            <input type="checkbox">
+            <span class="sliderAcademic round"></span>
+        </label>
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br />
+    <!--
+    <div class="dropdown">
+        <span> <label for="from"><label class="labelText"><b>From</b></label></label></span>
+        <
+        <input type="text" id="from" name="from">--->
+    <div class="custom-select" style="width:200px;">
+        <select>
+            <option value="0">From</option>
+            <option value="1">1 am</option>
+            <option value="2">2 am</option>
+            <option value="3">3 am</option>
+            <option value="4">4 am</option>
+            <option value="5">5 am</option>
+            <option value="6">6 am</option>
+            <option value="7">7 am</option>
+            <option value="8">8 am</option>
+            <option value="9">9 am</option>
+            <option value="10">10 am</option>
+            <option value="11">11 am</option>
+            <option value="12">12 pm</option>
+            <option value="1">1 pm</option>
+            <option value="2">2 pm</option>
+            <option value="3">3 pm</option>
+            <option value="4">4 pm</option>
+            <option value="5">5 pm</option>
+            <option value="6">6 pm</option>
+            <option value="7">7 pm</option>
+            <option value="8">8 pm</option>
+            <option value="9">9 pm</option>
+            <option value="10">11 pm</option>
+            <option value="11">12 am</option>
+
+        </select>
+    </div>
+
+
+    <div class="custom-select" style="width:200px;">
+        <select>
+            <option value="0">To </option>
+            <option value="1">to 1 am</option>
+            <option value="2">to 2 am</option>
+            <option value="3">to 3 am</option>
+            <option value="4">to 4 am</option>
+            <option value="5">to 5 am</option>
+            <option value="6">to 6 am</option>
+            <option value="7">to 7 am</option>
+            <option value="8">to 8 am</option>
+            <option value="9">to 9 am</option>
+            <option value="10">to 10 am</option>
+            <option value="11">to 11 am</option>
+            <option value="12">to 12 pm</option>
+            <option value="1">to 1 pm</option>
+            <option value="2">to 2 pm</option>
+            <option value="3">to 3 pm</option>
+            <option value="4">to 4 pm</option>
+            <option value="5">to 5 pm</option>
+            <option value="6">to 6 pm</option>
+            <option value="7">to 7 pm</option>
+            <option value="8">to 8 pm</option>
+            <option value="9">to 9 pm</option>
+            <option value="10">to 11 pm</option>
+            <option value="11">to 12 am</option>
+
+        </select>
+    </div>
+
+
+
+    <br> <br />
     <p id="rcorners1">
-        All Day
+        <b>All Day</b>
         <br> <label class="switch">
             <input type="checkbox">
             <span class="slider round"></span>
         </label>
     </p>
 
-
+    <br />
     <form action="/action_page.php">
         <label for="start"><label class="labelText"><b>Start</b></label></label>
         <input type="date" id="title" name="start">
@@ -83,18 +159,25 @@
         <input type="date" id="from" name="end">
     </form>
 
+    <br />
+
+
 
     <form>
         <label for="description"><label class="labelText"><b>Description</b></label></label>
         <input type="text" id="title" name="description">
+
     </form>
-    <br><br>
+    <br><br />
 
 
 
-    <p id="rcorners1">
-        Repeat
-        <br> <label class="switch">
+
+
+
+    <p id="rcorners3">
+        <b>Repeat</b>
+        <br /><label class="switch">
             <input type="checkbox">
             <span class="slider round"></span>
         </label>
@@ -102,12 +185,146 @@
 
 
 
-    <button class="button button1">Add</button>
 
-    <button class="button button1">Cancel</button>
+
+
+
+
+
+    <form action="/action_page.php">
+        <button class="button button1" onclick="addEvent(this)">Add</button>
+
+        <button class="button button1">Cancel</button>
+        <button class="button button1">Edit</button>
+        <button class="button button1">Delete</button>
+
+
+
+    </form>
+
+
+
+
+
+    <script>
+        var x, i, j, l, ll, selElmnt, a, b, c;
+        /*look for any elements with the class "custom-select":*/
+        x = document.getElementsByClassName("custom-select");
+        l = x.length;
+        for (i = 0; i < l; i++) {
+            selElmnt = x[i].getElementsByTagName("select")[0];
+            ll = selElmnt.length;
+            /*for each element, create a new DIV that will act as the selected item:*/
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+            /*for each element, create a new DIV that will contain the option list:*/
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 1; j < ll; j++) {
+                /*for each option in the original select element,
+                create a new DIV that will act as an option item:*/
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function (e) {
+                    /*when an item is clicked, update the original select box,
+                    and the selected item:*/
+                    var y, i, k, s, h, sl, yl;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    sl = s.length;
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < sl; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            yl = y.length;
+                            for (k = 0; k < yl; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function (e) {
+                /*when the select box is clicked, close any other select boxes,
+                and open/close the current select box:*/
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
+        }
+        function closeAllSelect(elmnt) {
+            /*a function that will close all select boxes in the document,
+            except the current select box:*/
+            var x, y, i, xl, yl, arrNo = [];
+            x = document.getElementsByClassName("select-items");
+            y = document.getElementsByClassName("select-selected");
+            xl = x.length;
+            yl = y.length;
+            for (i = 0; i < yl; i++) {
+                if (elmnt == y[i]) {
+                    arrNo.push(i)
+                } else {
+                    y[i].classList.remove("select-arrow-active");
+                }
+            }
+            for (i = 0; i < xl; i++) {
+                if (arrNo.indexOf(i)) {
+                    x[i].classList.add("select-hide");
+                }
+            }
+        }
+        /*if the user clicks anywhere outside the select box,
+        then close all select boxes:*/
+        document.addEventListener("click", closeAllSelect);
+    </script>
+
+    <script>
+        function addEvent(button) {
+            window.alert("Saved");
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 </body>
-        </html>
+</html>

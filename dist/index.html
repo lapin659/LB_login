@@ -5,14 +5,14 @@
     <title>Life Balancer - Login Page</title>
     <link rel="stylesheet" href="/login.ff2e7f55.css">
     <meta name="google-signIn-scope" content="profile email">
-    <!-- Old meta backup 
-    <meta name="google-signin-client_id" content="194520172614-sdpjges2hghqn9m2l2v6uq6nu143c8f5.apps.googleusercontent.com"/>
-    -->
-
+    <!-- Original meta backup (tweaked the content part)-->
     <meta name="google-signin-client_id" content="497813503597-tdd39kba2cdnnvslv9vs6h7at8989ihp.apps.googleusercontent.com">
     
-    <script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
+    <!-- Another version of the above meta
+    <meta name="google-signin-client_id" content="497813503597-tdd39kba2cdnnvslv9vs6h7at8989ihp.apps.googleusercontent.com">
+    -->
     
+    <script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
     <script type="text/javascript" src="/login.9a8a1afd.js"></script>
   <script src="/login.ff2e7f55.js"></script></head>
 
@@ -21,10 +21,12 @@
     <div class="container">
       <h2>Login Page</h2>
         <h4>Please select a mode of login</h4>
+        <!-- Another verision of SignIn
           <div class="g-signin2" data-onsuccess="onSignIn" data-scope="https://www.googleapis.com/auth/plus.login" data-accesstype="offline" data-redirecturi="https://calendar-version-2-3.glitch.me/main.html"></div> 
-        <!-- Original Sign in backup
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
         -->
+      
+        <!-- Original SignIn --> 
+          <div class="g-signin2" data-onsuccess="onSignIn"></div>
     </div>
   </body>
 </html>
