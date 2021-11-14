@@ -125,7 +125,8 @@ function onSignIn(googleUser) {
   console.log("Full Name: " + profile.getName());
   console.log("Email: " + profile.getEmail());
   var id_token = googleUser.getAuthResponse().id_token;
-  console.log("ID Token: " + id_token); //document.location.href = "https://calendar-version-2-3.glitch.me/main.html";
+  console.log("ID Token: " + id_token); //window.location.href('https://www.google.com');
+  //document.location.href = "https://calendar-version-2-3.glitch.me/main.html";
   //document.location.href = "main.html";
 }
 },{}],"../rbd/pnpm-volume/7643b825-854f-4999-b646-bc0857497c7c/node_modules/.registry.npmjs.org/parcel-bundler/1.12.5/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -156,7 +157,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46536" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39690" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
