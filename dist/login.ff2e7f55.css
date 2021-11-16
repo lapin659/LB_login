@@ -27,6 +27,10 @@ h1 {
   
 }
 
+.gradiency {
+  background-image: linear-gradient(red, yellow);
+}
+
 h2 {
     background-color: #006fe6;
     font-size: 50px;
