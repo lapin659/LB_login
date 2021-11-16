@@ -118,23 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"src/login.js":[function(require,module,exports) {
-function onSignIn(googleUser) {
-  // get user profile information
-  var profile = googleUser.getBasicProfile();
-  console.log("ID: " + profile.getId());
-  console.log("Full Name: " + profile.getName());
-  console.log("Email: " + profile.getEmail());
-  var id_token = googleUser.getAuthResponse().id_token;
-  console.log("ID Token: " + id_token); //window.location.href('https://www.google.com');
-  //document.location.href = "https://calendar-version-2-3.glitch.me/main.html";
-  //document.location.href = "main.html";
-}
 
-function signOut() {
-  gapi.auth2.getAuthInstance().signOut().then(function () {
-    console.log('user signed out');
-  });
-}
 },{}],"../rbd/pnpm-volume/7643b825-854f-4999-b646-bc0857497c7c/node_modules/.registry.npmjs.org/parcel-bundler/1.12.5/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -163,7 +147,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34808" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35090" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

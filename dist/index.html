@@ -4,29 +4,24 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Life Balancer - Login Page</title>
     <link rel="stylesheet" href="/login.ff2e7f55.css">
-    <meta name="google-signIn-scope" content="profile email">
-    <!-- Original meta backup (tweaked the content part)-->
-    <meta name="google-signin-client_id" content="497813503597-tdd39kba2cdnnvslv9vs6h7at8989ihp.apps.googleusercontent.com">
-    
-    <!-- Another version of the above meta
-    <meta name="google-signin-client_id" content="497813503597-tdd39kba2cdnnvslv9vs6h7at8989ihp.apps.googleusercontent.com">
-    -->
-    
-    <script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
     <script type="text/javascript" src="/login.9a8a1afd.js"></script>
   <script src="/login.ff2e7f55.js"></script></head>
 
-  <body class="gradiency">
+  <body>
     <h1>WELCOME TO LIFE BALANCER</h1>
     <div class="container">
       <h2>Login Page</h2>
-        <h4>Please select a mode of login</h4>
-        <!-- Another verision of SignIn
-          <div class="g-signin2" data-onsuccess="onSignIn" data-scope="https://www.googleapis.com/auth/plus.login" data-accesstype="offline" data-redirecturi="https://calendar-version-2-3.glitch.me/main.html"></div> 
-        -->
+        
+        <form class="modal-content" action="/main.html" method="post">
       
-        <!-- Original SignIn --> 
-          <div class="g-signin2" data-onsuccess="onSignIn" data-scope="https://www.googleapis.com/auth/plus.login" data-accesstype="offline" data-redirecturi="https://www.youtube.com"></div>
-    </div>
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required="">
+              
+            <button type="submit">Login</button>
+          </div>
+        </form>
+      </div>
+    
   </body>
 </html>
