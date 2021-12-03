@@ -10,7 +10,7 @@ h1 {
   padding: 25px;
   text-align: center;
 }
-
+<!---
 h2 {
   background-color: #BD5C32;
   color: white;
@@ -21,7 +21,7 @@ h2 {
   text-align: center;
   width: 50%;
 }
-
+-->
 
 /* Full-width input fields */
 input[type=text] {
@@ -35,7 +35,7 @@ input[type=text] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: #BD5C32;
   color: white;
   font-size: 20px;
   padding: 14px 20px;
